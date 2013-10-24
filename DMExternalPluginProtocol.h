@@ -15,5 +15,5 @@
 @protocol DMExternalHostProtocol <NSObject>
 @optional
 -(id)landingFordata:(NSDictionary *)__data whenPressOrder:(void(^)(void))__whenPressOrder;
-@property (nonatomic,readonly) NSString *oauth;
+@property (nonatomic,readonly) id userIdentifier;
 @end;
