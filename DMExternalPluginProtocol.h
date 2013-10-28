@@ -9,11 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @protocol DMExternalPluginProtocol <NSObject>
-
-@end
-
-@protocol DMExternalHostProtocol <NSObject>
 @optional
 -(id)landingFordata:(NSDictionary *)__data whenPressOrder:(void(^)(void))__whenPressOrder;
 @property (nonatomic,readonly) id userIdentifier;
-@end;
+@property (nonatomic,readonly) id featureIdentifier;
+@property (nonatomic,readonly) NSURL *clientHost;
+@end
